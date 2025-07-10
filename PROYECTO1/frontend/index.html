@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bienvenido al Mundo de los Autos</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Mundo de los Autos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path
+                        d="M11 19h-6a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v6"
+                    />
+                    <path d="M3 7l9 6l9 -6" />
+                    <path d="M15 19l2 2l4 -4" />
+                </svg>
+                <li><a href="acerca.html">Acerca de los Autos</a></li>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path
+                        d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1"
+                    />
+                </svg>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Autos Populares</h2>
+            <p>Descubre algunos de los autos más populares del mundo.</p>
+            <div class="gallery">
+                <img src="imagenes/auto1.jpg" alt="Auto 1" />
+                <img src="imagenes/auto2.jpg" alt="Auto 2" />
+                <img src="imagenes/auto3.jpg" alt="Auto 3" />
+            </div>
+        </section>
+
+        <section>
+            <h2>Agregar Auto</h2>
+            <form action="backend/create.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+                
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required />
+                
+                <label for="anio">Año:</label>
+                <input type="number" id="anio" name="anio" required />
+                
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+                
+                <button type="submit">Agregar Auto</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sitio sobre Autos</p>
+    </footer>
+</body>
+</html>
